@@ -1,57 +1,26 @@
 <script lang="ts">
-	import Header from './Header.svelte';
-	import '../app.css';
+    import Footer from "$components/layout/footer.svelte";
+    import Sidebar from "src/components/layout/sidebar.svelte";
+    import "../app.css";
+    import Header from "./Header.svelte";
 
-	let { children } = $props();
+    let { children } = $props();
 </script>
 
-<div class="app">
-	<Header />
+<div class="flex h-screen bg-gray-100">
+    <Sidebar />
 
-	<main>
-		{@render children()}
-	</main>
+    <div class="flex flex-1 flex-col overflow-hidden">
+        <Header />
 
-	<footer>
-		<p>
-			visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to learn about SvelteKit
-		</p>
-	</footer>
+        <main class="flex-1 overflow-y-auto bg-gray-100 p-5 py-[40px] md:p-10">
+            {@render children()}
+        </main>
+
+        <Footer />
+    </div>
 </div>
 
-<style>
-	.app {
-		display: flex;
-		flex-direction: column;
-		min-height: 100vh;
-	}
-
-	main {
-		flex: 1;
-		display: flex;
-		flex-direction: column;
-		padding: 1rem;
-		width: 100%;
-		max-width: 64rem;
-		margin: 0 auto;
-		box-sizing: border-box;
-	}
-
-	footer {
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
-	}
-
-	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
-	}
-</style>
+<svelte:head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</svelte:head>
