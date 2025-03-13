@@ -14,7 +14,7 @@
     const { form: formData, enhance } = form
 </script>
 
-<form method="POST" use:enhance>
+<form method="POST" action="/users/create" use:enhance>
     <div class="grid grid-cols-12 gap-4">
         <Form.Field {form} name="name" class="col-span-12">
             <Form.Control let:attrs>

@@ -1,0 +1,1 @@
+ALTER TABLE "`user`" ALTER COLUMN "cpf" SET DATA TYPE varchar(14);
