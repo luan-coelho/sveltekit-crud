@@ -1,4 +1,4 @@
-import { writable } from "svelte/store";
+import { writable } from 'svelte/store'
 
 // Criando uma store para controlar o estado do sidebar
-export const sidebarExpanded = writable(true);
+export const sidebarExpanded = writable(true)

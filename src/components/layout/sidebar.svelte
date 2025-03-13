@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { sidebarExpanded } from "$stores/sidebar-store";
+    import { sidebarExpanded } from '$stores/sidebar-store'
 </script>
 
 <aside
@@ -28,7 +28,12 @@
             <li class="flex items-center px-4 py-2 hover:bg-gray-800">
                 <span class="material-icons mr-2">settings</span>
                 {#if $sidebarExpanded}
-                    <span class="overflow-hidden whitespace-nowrap">Configurações</span>
+                    <a
+                        data-sveltekit-preload-data="tap"
+                        href="/users"
+                        class="overflow-hidden whitespace-nowrap">
+                        Usuários
+                    </a>
                 {/if}
             </li>
         </ul>

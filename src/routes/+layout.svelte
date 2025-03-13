@@ -1,10 +1,10 @@
 <script lang="ts">
-    import Footer from "$components/layout/footer.svelte";
-    import Sidebar from "src/components/layout/sidebar.svelte";
-    import "../app.css";
-    import Header from "./Header.svelte";
+    import Footer from '$components/layout/footer.svelte'
+    import Sidebar from 'src/components/layout/sidebar.svelte'
+    import '../app.css'
+    import Header from '../components/layout/header.svelte'
 
-    let { children } = $props();
+    let { children } = $props()
 </script>
 
 <div class="flex h-screen bg-gray-100">

@@ -1,9 +1,9 @@
 <script lang="ts">
-    import { sidebarExpanded } from "$stores/sidebar-store";
-    import { ChevronLeft, Menu } from "lucide-svelte";
+    import { sidebarExpanded } from '$stores/sidebar-store'
+    import { ChevronLeft, Menu } from 'lucide-svelte'
 
     function toggleSidebar() {
-        sidebarExpanded.update(value => !value);
+        sidebarExpanded.update(value => !value)
     }
 </script>
 

@@ -9,8 +9,8 @@
         }
     ],
     "endOfLine": "auto",
-    "semi": true,
-    "singleQuote": false,
+    "semi": false,
+    "singleQuote": true,
     "tabWidth": 4,
     "trailingComma": "all",
     "htmlWhitespaceSensitivity": "ignore",
